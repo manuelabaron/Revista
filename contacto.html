@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="./img/logo.png" alt="logo">
+        <h1 class="titulo">Revista Magic Shop</h1>
+      
+        <div class="padre-flex">
+        <nav class="header__navbar"> 
+            <ul  class="header__navbar--principal">
+                <li><a href="index.html"> Inicio</a></li>
+                <li> <a href="entradas.html"> Novedades</a></li>
+            <li> <a href="contacto.html"> Colabora con la revista</a></li>
+            <li> <a href="Equipo.html"> Equipo editorial</a></li>
+            </ul>
+            
+    
+        </nav>
+        </div>
+    </header>
+     <h1>Colabora con la revista</h1>  
+     <p>¿Te gustaría participar en alguna de nuestras secciones? 
+        Acá te contamos cómo, si querés proponer contenido o formar parte de nuestro equipo 
+        más abajo vas a encontrar el formulario correspondiente.</p>
+    
+
+    <form action="">
+    
+            <fieldset>
+                <legend>Propuesta de contenido</legend>
+        
+            <label for="name">Nombre</label>
+            <input type="text" name="name" placeholder="ingresa tu nombre" required>
+    <br>
+    <br>
+    <label for="apellido">Apellido</label>
+    <input type="text" name="apellido" placeholder="ingresa tu apellido" required>
+    <br>
+    <br>
+    <label for="mail">Correo electrónico</label>
+    <input type="text" name="mail" placeholder="ingresa tu correo electrónico" required>
+
+    <br>
+<br>
+    <label for="propuesta">¿Cuál es tu propuesta?</label>
+    <br>
+    <textarea name="propuesta" id="" cols="30" rows="10"></textarea>
+    
+    <br>
+    <p>¿Te gustaría participar solo por esta vez o te interesa formar parte del equipo fijo de la revista?</p>
+<select name="colaboración" id="">
+<option value="Colaboración única">Colaboración única</option>
+<option value="Equipo fijo">Equipo fijo</option>
+</select>
+<br>
+<br>
+
+<div>¿Qué actividades te gustaría realizar?</div>
+<input type="checkbox" name="cbx1"> Ilustrar
+<input type="checkbox" name="cbx2"> Escribir
+<input type="checkbox" name="cbx3"> Entrevistar
+
+<br>
+<br>
+<input type="submit" value="Enviar propuesta">
+<input type="reset">
+
+
+
+
+
+
+
+    </form>
+</fieldset>
+
+  <br>  
+<br>
+    
+
+<footer>
+    <div class="footer-wrapper">
+        <div class="single-footer">
+            <h2 class="footer-title">Enterate de nuestras últimas actualizaciones</h2>
+            <form  action="#" method="POST">
+                <input type="email" placeholder="Ingresá tu email" required>
+                <button type="submit">SUSCRIBIRSE</button>
+                </form>
+            
+        </div>
+        <div class="footer-wrapper">
+            <div class="single-footer">
+                <h2 class="footer-title">Encontranos en nuestras redes sociales</h2>
+                <ul class="footer2">
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Tik Tok</li> 
+                 </ul>
+                
+            </div>
+            </div>
+        </footer>
+
+
+</body>
+</html>
