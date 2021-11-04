@@ -1,0 +1,175 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.articulo {
+    margin: {
+        top: 20px;
+        bottom: 20px;
+    }
+	border-radius: 15px;
+    border-color: $primary;
+	display: block;
+    background-color: rgb(255, 234, 255);
+}
+
+.articulo__titulo{
+    color: $primary;
+    font: {
+        weight: bold;
+        size: 30px;
+    } 
+    margin: {
+       left: 10px; 
+       top: 10px
+       ;
+    } 
+}
+
+.articulo__img {
+  height: $height;
+  width:  100;
+  display: block;
+  margin-left: 10px;
+}
+
+.articulo__texto{
+    margin-left: 10px;
+}
+
+.articulo__subtitulo{
+    font: {
+        family: "Playfair Display", serif ; 
+        size: 20px;
+        weight: bold;
+     }
+   color: $primary;  
+   margin: {
+     left: 10px;  
+     bottom: 10px;
+   }
+}
+
+.articulo__fecha{
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+main{
+    width: 65%;
+    height: 1390px;
+}
+
+body{
+    font: {
+        family: "PT Serif", serif;
+        size: 20px;
+    }
+    margin: 2rem 4rem;
+}
+
+h1{
+    color: $primary;
+    font: {
+        family: "Playfair Display";
+        size: 40px;
+        weight: bold;
+    }
+margin: {
+    top: 20px;
+    bottom: 20px;
+}
+}
+
+h2{
+    color: $secondary;
+   font: {
+       weight: bold;
+       size: 30px;
+   }
+}
+
+p{
+    font: {
+        family: "PT Serif", serif;
+        size: 16px;
+    }
+}
+
+article{
+    margin: {
+        top: 20px;
+        bottom: 20px;
+    }
+}
+
+.logo{
+    height: 150px;
+    width:  200;
+    display: block;
+    margin: auto;
+}
+
+.portadas{
+  height: $height - 150px;
+  width:  200;
+}
+
+.novedades{
+  width: 65%;
+  height: 1500px;
+}
+
+.entrada{
+  height: $height;
+  width:  100;
+  display: block;
+}
+
+
+.portada{
+  height: $height;
+  width:  100;
+  display: block;
+  margin: auto;
+}
+
+.titulo{
+  text-align: center;
+  font: {
+     family:"Playfair Display", serif, 
+  Calibri, 'Trebuchet MS', sans-serif; 
+  size: 49px;
+  weight: bold;
+  }
+}
+
+.inicio{ 
+    font: {
+     family:"Playfair Display", serif, 
+  Calibri, 'Trebuchet MS', sans-serif;  
+  weight: bold; 
+    }
+}
+
+
+.subtítulo{
+    font: {
+       family: "Playfair Display", serif ; 
+       size: 20px;
+       weight: bold;
+    }
+  color: $secondary;
+}
+
+.slider{
+    height: $height;
+    width: 300px;
+}

@@ -47,7 +47,7 @@
 .container {
   display: grid;
   width: 100%;
-  height: 100vh; 
+  height: 350vh; 
   grid-template-columns:  repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 5px 5px; 
@@ -187,4 +187,51 @@ footer ul{
     font-family: "Playfair Display", serif ;
   color: rgb(208, 166, 247);
   font-size: 20px;
+}
+
+
+.contenedor {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.articulo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+	border-radius: 15px;
+	display: block;
+  background-color: rgb(255, 234, 255);
+}
+
+.articulo__titulo{
+    color: #9c469c;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10px; 
+    margin-top: 10px;
+}
+
+.articulo__img {
+  height: 300px;
+  width:  100;
+  display: block;
+  margin-left: 10px;
+}
+
+.articulo__texto{
+    margin-left: 10px;
+}
+
+.articulo__subtitulo{
+   font-family: "Playfair Display", serif ; 
+   font-size: 20px;
+   font-weight: bold;
+   color: #9c469c;  
+   margin-left: 10px;  
+   margin-bottom: 10px;
+}
+
+.articulo__fecha{
+    margin-left: 10px;
+    font-size: 1rem;
 }

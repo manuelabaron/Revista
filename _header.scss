@@ -1,0 +1,49 @@
+.header__navbar--principal{
+    padding: 50px;
+    list-style: none;
+    width: 100%;
+  
+   li{
+   display: inline-block; 
+}  
+
+a{
+   
+    text: {
+      decoration: none;
+      align: center; 
+  }
+  font: {
+      family: "PT Serif", serif;
+      size: 16px;
+  }  
+  color: white;
+  padding: 1.2rem;
+  background-color: $primary;
+  }
+
+  a:hover{
+    text: {
+        decoration: none;
+        align: center; 
+    }
+      
+   font: {
+      family: "PT Serif", serif; 
+      size: 16px;
+   }
+   color: $primary;
+   padding: 1.2rem;
+   background-color: white;
+  }
+}
+
+ .padre-flex {
+    display: flex;  
+    flex-direction: row; 
+    justify-content: center;
+ }
+
+.contenedorFlex{
+    display:flex
+}
