@@ -111,7 +111,7 @@ article{
 }
 
 .logo{
-    height: 150px;
+    height: $height - 150px;
     width:  200;
     display: block;
     margin: auto;
