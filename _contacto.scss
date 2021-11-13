@@ -8,13 +8,22 @@ fieldset {
     width: 50%;
  }
  
+form{
+    border: {
+        radius: 10px;  
+        color: $primary;
+     }
+     margin:0 auto;
+     text-align: center;
+     width: 50%;
+}
 
  legend{
     text-align: center;
     font: {
        family:"Playfair Display", serif, 
     Calibri, 'Trebuchet MS', sans-serif; 
-    size: 30px;
+    size: 1.87em;
     weight: bold;
     }
     color: $secondary;
@@ -84,6 +93,8 @@ fieldset {
     align-items: center;
     cursor: pointer;
     font-family: arial;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .checkbox{
@@ -115,3 +126,4 @@ fieldset {
     background-color: $primary;
     font-weight: bold;
 }
+

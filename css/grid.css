@@ -3,39 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-.header__navbar--principal{
-    padding: 50px;
-    list-style: none;
-}
-
-.header__navbar--principal li{
-   display: inline-block; 
-}
-
  
-
-.header__navbar--principal a{
+a{
+  font-family: "PT Serif", serif;
+  font-size: 16px; 
   text-decoration: none;
   text-align: center; 
-  font-family: "PT Serif", serif;
-  font-size: 16px;
   color: white;
   padding: 1.2rem;
-  background-color:rgb(156, 70, 156);
-  
- }
+  background-color: rgb(156, 70, 156);
+  }
 
- .header__navbar--principal a:hover{
-  text-decoration: none;
-  text-align: center; 
-  font-family: "PT Serif", serif;
-  font-size: 16px;
-  color: rgb(156, 70, 156);
-  padding: 1.2rem;
-  background-color: white;
- }
+  a:hover{
+    font-family: "PT Serif", serif;
+    font-size: 16px; 
+    text-decoration: none;
+   text-align: center; 
+   color: rgb(156, 70, 156);
+   padding: 1.2rem;
+   background-color: white;
+  }
+
+  .container {
+    display: grid;
+    width: 100%;
+    height: 100vh; 
+    grid-template-columns:  repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px 5px; 
+    grid-template-areas: 
+      "header header header"
+      "main main aside"
+      "footer footer footer"; 
+  }
+  
+  
+  .header { grid-area: 1 / 1 / 2 / 6 }
+  .footer { grid-area: 5/ 1 / 6 / 6 ; }
+  .main { grid-area: 2 / 1 / 6 / 5; }
+  .aside { grid-area: 2 / 5 / 6 / 6 ; }
 
  .padre-flex {
     display: flex;  
@@ -43,25 +49,6 @@
     justify-content: center;
  }
  
-
-.container {
-  display: grid;
-  width: 100%;
-  height: 350vh; 
-  grid-template-columns:  repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: 5px 5px; 
-  grid-template-areas: 
-    "header header header"
-    "main main aside"
-    "footer footer footer"; 
-}
-
-
-.header { grid-area: 1 / 1 / 2 / 6 }
-.footer { grid-area: 5/ 1 / 6 / 6 ; }
-.main { grid-area: 2 / 1 / 6 / 5; }
-.aside { grid-area: 2 / 5 / 6 / 6 ; }
 
 
  body{
@@ -82,7 +69,7 @@ aside li{
 
 main{
     width: 65%;
-    height: 50vh;
+    height: 800px;
 }
 
 h1{
@@ -144,6 +131,26 @@ footer ul{
     margin-top: 20px;
 }
 
+.suscribite{
+  font-size: 15px;
+  border-radius: 5px;
+  background-color:rgb(208, 166, 247);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 115px;
+}
+
+.mail {
+  width: 200;
+  height:27px;
+  border-radius: 10px;
+  border: 2px solid rgb(156, 70, 156);
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 10px;
+  color: rgb(208, 166, 247);
+}   
+
   .logo{
     height: 150px;
     width:  200;
@@ -166,8 +173,8 @@ footer ul{
   height: 300px;
   width:  100;
   display: block;
-
 }
+
 
 .portada{
   height: 300px;
@@ -235,3 +242,23 @@ footer ul{
     margin-left: 10px;
     font-size: 1rem;
 }
+
+.suscribite{
+  font-size: 15px;
+  border-radius: 5px;
+  background-color:rgb(208, 166, 247);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 115px;
+}
+
+.mail {
+  width: 200;
+  height:27px;
+  border-radius: 10px;
+  border:2px solid #9c469c;
+  padding:10px;
+  margin-top:5px;
+  font-size:10px;
+  color: rgb(208, 166, 247);
+}   

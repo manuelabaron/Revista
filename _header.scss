@@ -1,42 +1,23 @@
-.header__navbar--principal{
-    padding: 50px;
-    list-style: none;
-    width: 100%;
-  
-   li{
-   display: inline-block; 
-}  
-
 a{
-   
-    text: {
-      decoration: none;
-      align: center; 
-  }
-  font: {
-      family: "PT Serif", serif;
-      size: 16px;
-  }  
+  font-family: "PT Serif", serif;
+  font-size: 1.25em; 
+  text-decoration: none;
+  text-align: center; 
   color: white;
   padding: 1.2rem;
   background-color: $primary;
   }
 
   a:hover{
-    text: {
-        decoration: none;
-        align: center; 
-    }
-      
-   font: {
-      family: "PT Serif", serif; 
-      size: 16px;
-   }
+    font-family: "PT Serif", serif;
+    font-size:1.25em; 
+    text-decoration: none;
+   text-align: center; 
    color: $primary;
    padding: 1.2rem;
    background-color: white;
   }
-}
+
 
  .padre-flex {
     display: flex;  
@@ -46,4 +27,8 @@ a{
 
 .contenedorFlex{
     display:flex
+}
+
+header{
+  grid-area: header;
 }

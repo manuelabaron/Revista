@@ -5,29 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+
+    <link rel="stylesheet" href="./css bootstrap/bootstrap.min.css"> 
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-
-    <header>
+    <div class="row">
+    <header class="header">
         <img class="logo" src="./img/logo.png" alt="logo">
         <h1 class="titulo">Revista Magic Shop</h1>
       
         <div class="padre-flex">
-        <nav class="header__navbar"> 
-            <ul  class="header__navbar--principal">
-                <li><a href="index.html"> Inicio</a></li>
-                <li> <a href="entradas.html"> Novedades</a></li>
-            <li> <a href="contacto.html"> Colabora con la revista</a></li>
-            <li> <a href="Equipo.html"> Equipo editorial</a></li>
-            </ul>
-            
-    
-        </nav>
-        </div>
+            <nav class="navbar navbar-expand-sm">
+                   <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="index.html"> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entradas.html"> Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html"> Colabora con la revista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Equipo.html"> Equipo editorial</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+            <br>
     </header>
-     <h1>Colabora con la revista</h1>  
-     <p>¿Te gustaría participar en alguna de nuestras secciones? 
+
+    <div class="col-md-12 col-lg-8">
+    <main>
+     <h1 class="inicio">Colabora con la revista</h1>  
+     <p class="articulo__texto">¿Te gustaría participar en alguna de nuestras secciones? 
         Acá te contamos cómo, si querés proponer contenido o formar parte de nuestro equipo 
         más abajo vas a encontrar el formulario correspondiente.</p>
         <br>
@@ -84,7 +96,7 @@
 
 <br>
 <br>
-<input class="boton" type="submit" value="Enviar propuesta">
+<input class="boton" type="submit" value="Enviar">
 <input class="boton" type="reset">
 
 
@@ -95,23 +107,21 @@
 
     </form>
 </fieldset>
+</main>
 
-  <br>  
-<br>
-    
 
 <footer>
     <div class="footer-wrapper">
         <div class="single-footer">
             <h2 class="footer-title">Enterate de nuestras últimas actualizaciones</h2>
             <form  action="#" method="POST">
-                <input type="email" placeholder="Ingresá tu email" required>
-                <button type="submit">SUSCRIBIRSE</button>
+                <input class="mail" type="email" placeholder="Ingresá tu email" required>
+                <button class="suscribite" type="submit">SUSCRIBIRSE</button>
                 </form>
             
         </div>
-        <div class="footer-wrapper">
-            <div class="single-footer">
+        <div class="celular" class="footer-wrapper">
+            <div class="celular" class="single-footer">
                 <h2 class="footer-title">Encontranos en nuestras redes sociales</h2>
                 <ul class="footer2">
                     <li>Instagram</li>
@@ -123,6 +133,6 @@
             </div>
         </footer>
 
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

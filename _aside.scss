@@ -1,10 +1,9 @@
 
 aside{
     margin:0px;
-    width: 30%;
-    height: 300px;
     box-sizing:border-box;
     margin-left: 50px;
+    grid-area: sidebar;
 li{
     list-style: none;
 }

@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+
+  @media only screen and (max-width: 575px) {
+    .articulo__texto{
+   font-size: 2.1vw;
+  }
+    .celular{
+       display: none;
+   }
+    .nov{
+        height: 2000px;
+    }
+   body{
+       background-color: rgb(255, 234, 255);
+       margin: 0;
+       padding: 0;
+   }
+  }
+  
+
 .contenedor {
 	width: 90%;
 	margin: 0 auto;
@@ -24,7 +43,7 @@
     color: $primary;
     font: {
         weight: bold;
-        size: 30px;
+        size: 2.1vw;
     } 
     margin: {
        left: 10px; 
@@ -42,12 +61,13 @@
 
 .articulo__texto{
     margin-left: 10px;
+    font-family: "PT Serif", serif;
 }
 
 .articulo__subtitulo{
     font: {
         family: "Playfair Display", serif ; 
-        size: 20px;
+        size: 1.4vw;
         weight: bold;
      }
    color: $primary;  
@@ -59,27 +79,31 @@
 
 .articulo__fecha{
     margin-left: 10px;
-    font-size: 1rem;
+    font-size: 1.1vw;
 }
 
 main{
     width: 65%;
-    height: 1390px;
+    height: 1610px;
+    grid-area: main;
 }
 
 body{
     font: {
         family: "PT Serif", serif;
-        size: 20px;
+        size: 1.4vw;
     }
     margin: 2rem 4rem;
+}
+.nov{
+    height: 1900px;
 }
 
 h1{
     color: $primary;
     font: {
         family: "Playfair Display";
-        size: 40px;
+        size: 2.9vw;
         weight: bold;
     }
 margin: {
@@ -92,14 +116,14 @@ h2{
     color: $secondary;
    font: {
        weight: bold;
-       size: 30px;
+       size: 2.1vw;
    }
 }
 
 p{
     font: {
         family: "PT Serif", serif;
-        size: 16px;
+        size: 1.1vw;
     }
 }
 
@@ -146,7 +170,7 @@ article{
   font: {
      family:"Playfair Display", serif, 
   Calibri, 'Trebuchet MS', sans-serif; 
-  size: 49px;
+  size: 3.5vw;
   weight: bold;
   }
 }
@@ -159,11 +183,14 @@ article{
     }
 }
 
+.cont{
+    height: 1200px;
+}
 
 .subtítulo{
     font: {
        family: "Playfair Display", serif ; 
-       size: 20px;
+       size: 1.4vw;
        weight: bold;
     }
   color: $secondary;
@@ -173,3 +200,4 @@ article{
     height: $height;
     width: 300px;
 }
+

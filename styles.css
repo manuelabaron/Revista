@@ -1,11 +1,10 @@
 @charset "UTF-8";
 aside {
   margin: 0px;
-  width: 30%;
-  height: 300px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-left: 50px;
+  grid-area: sidebar;
 }
 
 aside li {
@@ -18,6 +17,7 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 20px;
+  font-size: 1.25em;
 }
 
 table li {
@@ -29,8 +29,9 @@ table th, table td {
 }
 
 footer {
+  grid-area: footer;
   width: 100%;
-  height: 100px;
+  height: 200px;
   bottom: 0;
   background-image: -webkit-gradient(linear, left top, right top, from(#9c469c), to(#d0a6f7));
   background-image: linear-gradient(to right, #9c469c, #d0a6f7);
@@ -43,7 +44,7 @@ footer ul {
   list-style: none;
   color: #180101;
   font-family: "Playfair Display", serif;
-  font-size: 15px;
+  font-size: 1.0vw;
 }
 
 .footer-wrapper {
@@ -61,37 +62,44 @@ footer ul {
   font-family: "Playfair Display", serif;
   font-size: 20px;
   color: black;
+  margin-left: 5px;
 }
 
 .suscribite {
   font-size: 15px;
+  border-radius: 5px;
+  background-color: #d0a6f7;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 115px;
 }
 
-.header__navbar--principal {
-  padding: 50px;
-  list-style: none;
-  width: 100%;
+.mail {
+  width: 200;
+  height: 27px;
+  border-radius: 10px;
+  border: 2px solid #9c469c;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 10px;
+  color: #d0a6f7;
 }
 
-.header__navbar--principal li {
-  display: inline-block;
-}
-
-.header__navbar--principal a {
+a {
+  font-family: "PT Serif", serif;
+  font-size: 1.25em;
   text-decoration: none;
   text-align: center;
-  font-family: "PT Serif", serif;
-  font-size: 16px;
   color: white;
   padding: 1.2rem;
   background-color: #9c469c;
 }
 
-.header__navbar--principal a:hover {
+a:hover {
+  font-family: "PT Serif", serif;
+  font-size: 1.25em;
   text-decoration: none;
   text-align: center;
-  font-family: "PT Serif", serif;
-  font-size: 16px;
   color: #9c469c;
   padding: 1.2rem;
   background-color: white;
@@ -116,11 +124,32 @@ footer ul {
   display: flex;
 }
 
+header {
+  grid-area: header;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media only screen and (max-width: 575px) {
+  .articulo__texto {
+    font-size: 2.1vw;
+  }
+  .celular {
+    display: none;
+  }
+  .nov {
+    height: 2000px;
+  }
+  body {
+    background-color: #ffeaff;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .contenedor {
@@ -140,7 +169,7 @@ footer ul {
 .articulo__titulo {
   color: #9c469c;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2.1vw;
   margin-left: 10px;
   margin-top: 10px;
 }
@@ -154,11 +183,12 @@ footer ul {
 
 .articulo__texto {
   margin-left: 10px;
+  font-family: "PT Serif", serif;
 }
 
 .articulo__subtitulo {
   font-family: "Playfair Display", serif;
-  font-size: 20px;
+  font-size: 1.4vw;
   font-weight: bold;
   color: #9c469c;
   margin-left: 10px;
@@ -167,24 +197,29 @@ footer ul {
 
 .articulo__fecha {
   margin-left: 10px;
-  font-size: 1rem;
+  font-size: 1.1vw;
 }
 
 main {
   width: 65%;
-  height: 1390px;
+  height: 1610px;
+  grid-area: main;
 }
 
 body {
   font-family: "PT Serif", serif;
-  font-size: 20px;
+  font-size: 1.4vw;
   margin: 2rem 4rem;
+}
+
+.nov {
+  height: 1900px;
 }
 
 h1 {
   color: #9c469c;
   font-family: "Playfair Display";
-  font-size: 40px;
+  font-size: 2.9vw;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -193,12 +228,12 @@ h1 {
 h2 {
   color: #d0a6f7;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2.1vw;
 }
 
 p {
   font-family: "PT Serif", serif;
-  font-size: 16px;
+  font-size: 1.1vw;
 }
 
 article {
@@ -239,7 +274,7 @@ article {
 .titulo {
   text-align: center;
   font-family: "Playfair Display", serif,  Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 49px;
+  font-size: 3.5vw;
   font-weight: bold;
 }
 
@@ -248,9 +283,13 @@ article {
   font-weight: bold;
 }
 
+.cont {
+  height: 1200px;
+}
+
 .subtítulo {
   font-family: "Playfair Display", serif;
-  font-size: 20px;
+  font-size: 1.4vw;
   font-weight: bold;
   color: #d0a6f7;
 }
@@ -268,10 +307,18 @@ fieldset {
   width: 50%;
 }
 
+form {
+  border-radius: 10px;
+  border-color: #9c469c;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
 legend {
   text-align: center;
   font-family: "Playfair Display", serif,  Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 30px;
+  font-size: 1.87em;
   font-weight: bold;
   color: #d0a6f7;
   margin-bottom: 20px;
@@ -335,6 +382,8 @@ option {
           align-items: center;
   cursor: pointer;
   font-family: arial;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .checkbox {

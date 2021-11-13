@@ -1,7 +1,6 @@
 {
   "name": "revistabaron",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +14,9 @@
   "bugs": {
     "url": "https://github.com/manuelabaron/Revista/issues"
   },
-  "homepage": "https://github.com/manuelabaron/Revista#readme"
+  "homepage": "https://github.com/manuelabaron/Revista#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }
