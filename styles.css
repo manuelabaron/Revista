@@ -312,7 +312,8 @@ form {
   border-color: #9c469c;
   margin: 0 auto;
   text-align: center;
-  width: 50%;
+  width: 98%;
+  max-width: 500px;
 }
 
 legend {
